@@ -1,0 +1,97 @@
+/* Global */
+:root {
+    --bakery-landing-1-background: #FAF4EA;
+    --bakery-landing-1-c-2: #819B57;
+    --bakery-landing-13: #465929;
+    --bakery-landing-11: #31261A;
+}
+
+body {
+    background-color: var(--bakery-landing-1-background);
+    font-family: 'Poppins', sans-serif;
+    color: var(--bakery-landing-11);
+}
+
+ul {
+    list-style-type: none;
+}
+
+/* button */
+.button {
+    border-radius: 8px;
+    border: 2px solid var(--bakery-landing-1-c-2);
+    background: var(--bakery-landing-1-c-2);
+    display: flex;
+    padding: 16px 32px;
+    align-items: flex-start;
+    gap: 10px;
+    color: var(--bakery-landing-1-background);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    cursor: pointer;
+}
+
+.button:hover {
+    color: var(--bakery-landing-13);
+    background-color: transparent;
+
+}
+
+/* link */
+.link {
+    color: var(--bakery-landing-1-background);
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.link:hover {
+    color: var(--bakery-landing-1-c-2);
+}
+
+/* hero section */
+.hero-title {
+    color: var(--bakery-landing-1-background);
+    font-size: 128px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+
+.hero-title .accent{
+    color: var(--bakery-landing-1-c-2);
+}
+
+.baner {
+    width: 1440px;
+    height: 736px;
+    flex-shrink: 0;
+    background: url("/images/baner.jpg");
+}
+
+/* tradition section */
+.advantages-list {
+    background-color: var(--bakery-landing-1-c-2);
+    color: var(--bakery-landing-1-background);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    margin-top: 0;
+}
+
+.section-title {
+    color: var(--bakery-landing-11);
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 84px;
+}
+
+.section-title .accent {
+    color: var(--bakery-landing-13);
+}
