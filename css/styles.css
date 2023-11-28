@@ -74,7 +74,7 @@ p {
 }
 
 a {
-    display: inline-block;
+  display: inline-block;
 }
 
 address {
@@ -115,7 +115,7 @@ ul {
 }
 
 /* button */
-.button {
+.modal-btn-open {
   border-radius: 8px;
   border: 2px solid var(--bakery-landing-1-c-2);
   background: var(--bakery-landing-1-c-2);
@@ -129,7 +129,7 @@ ul {
   cursor: pointer;
 }
 
-.button:hover {
+.modal-btn-open:hover {
   color: var(--bakery-landing-13);
   background-color: transparent;
 }
@@ -248,17 +248,25 @@ ul {
 }
 
 .chefs-title {
-  margin-bottom: 80px;
-  max-width: 520px;
   margin: 0 auto 80px;
+  position: relative;
 }
 
 .chefs-title::before,
 .chefs-title::after {
-  display: flex;
   width: 352px;
   border: 2px solid var(--bakery-landing-1c5);
   content: "";
+  position: absolute;
+  bottom: 23px;
+}
+
+.chefs-title::before {
+  left: 0;
+}
+
+.chefs-title::after {
+  right: 0;
 }
 
 .chefs-list {
@@ -283,11 +291,11 @@ ul {
 }
 
 .chef-text p {
-    margin-bottom: 24px;
+  margin-bottom: 24px;
 }
 
 .chef-text p:last-child {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 /* Formats section */
@@ -374,6 +382,7 @@ ul {
   flex-shrink: 0;
   border: none;
   border-radius: 16px;
+  max-width: 603px;
 }
 
 /* Footer */
@@ -384,6 +393,30 @@ ul {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  position: relative;
+  padding: 32px 0;
+}
+
+.footer::before,
+.footer::after {
+  content: "";
+  background-repeat: no-repeat;
+  bottom: 0;
+  position: absolute;
+}
+
+.footer::before {
+  background-image: url(../images/decor-bread-small.png);
+  width: 180px;
+  height: 120px;
+  left: 0;
+}
+
+.footer::after {
+  background-image: url(../images/decor-bread-large.png);
+  width: 380px;
+  height: 190px;
+  right: 0;
 }
 
 .footer-container {
@@ -428,3 +461,36 @@ ul {
   flex-grow: 1;
 }
 
+/* Modal */
+.backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  width: 880px;
+  height: 880px;
+  background-color: var(--bakery-landing-1-background);
+  border-radius: 32px;
+  position: relative;
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.modal-btn-close {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  cursor: pointer;
+}
