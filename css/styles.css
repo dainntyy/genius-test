@@ -115,7 +115,8 @@ ul {
 }
 
 /* button */
-.modal-btn-open {
+.modal-btn-open,
+.button {
   border-radius: 8px;
   border: 2px solid var(--bakery-landing-1-c-2);
   background: var(--bakery-landing-1-c-2);
@@ -127,11 +128,13 @@ ul {
   font-weight: 600;
   font-size: 18px;
   cursor: pointer;
+  transition: color 0.3s, background-color 0.3s;
 }
 
-.modal-btn-open:hover {
+.modal-btn-open:hover,
+.button:hover {
   color: var(--bakery-landing-13);
-  background-color: transparent;
+  background-color: var(--bakery-landing-1-background);
 }
 
 /* link */
@@ -139,6 +142,7 @@ ul {
   color: var(--bakery-landing-1-background);
   text-align: center;
   text-decoration: none;
+  transition: color 0.3s;
 }
 
 .link:hover {
@@ -146,6 +150,14 @@ ul {
 }
 
 /* Header */
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-top: 32px;
+}
+
 .header-container {
   display: flex;
   align-items: center;
@@ -180,7 +192,13 @@ ul {
 
 .hero-section {
   padding: 272px 0;
-  background-image: url(../images/hero-section-background.jpg);
+  background-image: linear-gradient(
+      103deg,
+      rgba(18, 18, 17, 0.78) 2.03%,
+      rgba(18, 18, 17, 0.6) 58.46%,
+      rgba(18, 18, 17, 0) 90.36%
+    ),
+    url(../images/hero-section-background.jpg);
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
@@ -340,11 +358,16 @@ ul {
   cursor: pointer;
   fill: var(--bakery-landing-11);
   flex-shrink: 0;
+  transform: rotate(-180);
 }
 
 .carousel-button:hover {
   background-color: var(--bakery-landing-11);
   fill: var(--bakery-landing-1-background);
+}
+
+.carousel-button.next {
+  transform: rotate(0.5turn);
 }
 
 .formats-item {
@@ -361,6 +384,11 @@ ul {
   );
   padding: 24px;
   height: 444px;
+  transition: transform 0.3s;
+}
+
+.format-card:hover {
+  transform: scale(1.05);
 }
 
 /* COntacts */
@@ -441,6 +469,7 @@ ul {
   font-weight: 300;
   color: var(--bakery-landing-1-background);
   text-decoration: none;
+  transition: color 0.3s;
 }
 
 .address-link:hover {
@@ -472,14 +501,20 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 72px 0;
+  transition: opacity 0.3s, visibility 0.3s;
 }
 
 .modal {
-  width: 880px;
-  height: 880px;
+  width: 100%;
+  height: 100%;
   background-color: var(--bakery-landing-1-background);
   border-radius: 32px;
   position: relative;
+  max-width: 880px;
+  max-height: 880px;
+  padding: 128px;
+  overflow: auto;
 }
 
 .backdrop.is-hidden {
@@ -493,4 +528,60 @@ ul {
   top: 40px;
   right: 40px;
   cursor: pointer;
+}
+
+/* Form */
+.form-field {
+  margin-bottom: 32px;
+  position: relative;
+}
+
+.form-label {
+  position: absolute;
+  top: 16px;
+  left: 42px;
+}
+
+.form-input {
+  padding: 16px 42px;
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid var(--bakery-landing-14);
+  background-color: transparent;
+  font-size: 16px;
+  line-height: 1.17;
+}
+
+.form-input:focus {
+  border-color: var(--bakery-landing-1-c-2);
+  outline: none;
+}
+
+.form-input::placeholder {
+  color: var(--bakery-landing-14);
+  font-size: 16px;
+  line-height: 1.17;
+}
+
+.form-input:focus::placeholder {
+  color: var(--bakery-landing-11);
+}
+
+.button {
+  display: block;
+  margin: 0 auto;
+}
+
+.form-terms {
+  font-weight: 500px;
+  font-size: 12px;
+  text-align: center;
+  max-width: 220px;
+  margin: 0 auto;
+  margin-top: 24px;
+}
+
+.form-terms-link {
+  color: var(--bakery-landing-11);
+  text-underline-offset: 3px;
 }
