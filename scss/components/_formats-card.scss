@@ -1,0 +1,14 @@
+.format-card {
+    border-radius: 16px;
+    background-image: linear-gradient(180deg,
+            rgba(49, 38, 26, 0) 55.21%,
+            rgba(49, 38, 26, 0.71) 72.92%,
+            var(--bakery-landing-11) 100%);
+    padding: 24px;
+    height: 444px;
+    transition: transform 0.3s;
+}
+
+.format-card:hover {
+    transform: scale(1.05);
+}

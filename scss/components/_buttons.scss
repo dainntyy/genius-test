@@ -1,0 +1,22 @@
+/* button */
+.modal-btn-open,
+.button {
+    border-radius: 8px;
+    border: 2px solid var(--bakery-landing-1-c-2);
+    background: var(--bakery-landing-1-c-2);
+    display: flex;
+    padding: 16px 32px;
+    align-items: flex-start;
+    gap: 10px;
+    color: var(--bakery-landing-1-background);
+    font-weight: 600;
+    font-size: 18px;
+    cursor: pointer;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+.modal-btn-open:hover,
+.button:hover {
+    color: var(--bakery-landing-13);
+    background-color: var(--bakery-landing-1-background);
+}

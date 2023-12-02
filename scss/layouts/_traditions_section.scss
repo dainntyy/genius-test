@@ -1,0 +1,35 @@
+/* tradition section */
+.traditions-section {
+    padding-top: 96px;
+}
+
+.traditions-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.traditions-content {
+    max-width: 710px;
+}
+
+.traditions-title {
+    margin-bottom: 42px;
+}
+
+.traditions-text {
+    font-weight: 400;
+}
+
+.traditions-text .brand {
+    color: var(--bakery-landing-1-c-2);
+    font-weight: 600;
+}
+
+.traditions-text.limited {
+    max-width: 330px;
+}
+
+.traditions-text .uppercase {
+    text-transform: uppercase;
+}

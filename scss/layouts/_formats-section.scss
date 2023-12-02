@@ -1,0 +1,31 @@
+/* Formats section */
+.formats-list {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.format-title {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--bakery-landing-1-background);
+}
+
+.formats-title {
+    margin-bottom: 80px;
+}
+
+.format-text {
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.formats-container {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+}
+
+.formats-item {
+    flex-basis: calc((100% - 40px) / 3);
+}
