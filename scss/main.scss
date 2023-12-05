@@ -1,6 +1,7 @@
 @import './utils/fonts';
 @import './utils/variables';
 @import './base';
+@import './utils/texts';
 @import './utils/utils';
 
 @import './components/buttons';
@@ -8,6 +9,7 @@
 @import './components/carousel-button';
 @import './components/chef-card';
 @import './components/formats-card';
+@import './components/form-terms';
 
 @import './layouts/header';
 @import './layouts/hero-section';
@@ -19,4 +21,6 @@
 @import './layouts/footer';
 @import './layouts/modal';
 @import './layouts/form';
-
+@import './layouts/section';
+@import './layouts/container';
+@import './layouts/mobile-menu';

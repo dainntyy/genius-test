@@ -1,23 +1,26 @@
 /* hero section */
-.hero-title {
-    color: var(--bakery-landing-1-background);
-    font-size: 128px;
-    font-weight: 900;
-    text-align: center;
-}
-
-.hero-title .accent {
-    color: var(--bakery-landing-1-c-2);
-}
-
 .hero-section {
     padding: 272px 0;
     background-image: linear-gradient(103deg,
-            rgba(18, 18, 17, 0.78) 2.03%,
-            rgba(18, 18, 17, 0.6) 58.46%,
-            rgba(18, 18, 17, 0) 90.36%),
+        rgba(18, 18, 17, 0.78) 2.03%,
+        rgba(18, 18, 17, 0.6) 58.46%,
+        rgba(18, 18, 17, 0) 90.36%),
         url(../images/hero-section-background.jpg);
     background-repeat: no-repeat;
     background-position: center top;
     background-size: cover;
+
+    &__title {
+        color: var(--bakery-landing-1-background);
+        font-size: 67px;
+        font-weight: 900;
+        text-align: center;
+        line-height: 1;
+        
+        @media screen and (min-width: $bp-tablet) {
+            font-size: 128px;
+            line-height: 1.5;
+        }
+    }
+    
 }

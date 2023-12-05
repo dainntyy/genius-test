@@ -7,22 +7,44 @@
     padding-top: 32px;
     
     &__container {
-            display: flex;
-            align-items: center;
-            gap: 40px;
-        }
+        display: flex;
+        align-items: center;
+        gap: 40px;
+    }
     
-        &__nav {
-            flex-grow: 1;
-            display: flex;
-            align-items: center;
-            gap: 40px;
-        }
+    &__nav {
+        flex-grow: 1;
+        display: flex;
+        align-items: center;
+        gap: 40px;
+    }
     
-        &__menu {
+    &__menu {
+        display: none;
+        @media screen and (min-width: $bp-desktop) {
             display: flex;
             gap: 64px;
             flex-grow: 1;
             justify-content: center;
         }
+    }
+
+    &__button {
+        display: none;
+        @media screen and (min-width: $bp-desktop) {
+            display: block;
+        }
+    }
+
+    &__burger {
+        width: 24px;
+        height: 24px;
+        padding: 0;
+        background-color: transparent;
+        border: none;
+        fill: var(--bakery-landing-1-background);
+        @media screen and (min-width: $bp-desktop) {
+            display: none;
+        }
+    }
 }

@@ -2,16 +2,14 @@
 .advantages-section {
     background-color: var(--bakery-landing-1-c-2);
     padding: 16px 0;
-}
-
-.advantages-list {
-    display: flex;
-    justify-content: space-between;
-    gap: 40px;
-}
-
-.advantages-item {
-    color: var(--bakery-landing-1-background);
-    font-size: 20px;
-    font-weight: 300;
+    &__list {
+            display: flex;
+            justify-content: space-between;
+            gap: 40px;
+        }
+        &__item {
+            color: var(--bakery-landing-1-background);
+            font-size: 20px;
+            font-weight: 300;
+        }
 }

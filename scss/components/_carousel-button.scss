@@ -13,13 +13,13 @@
     fill: var(--bakery-landing-11);
     flex-shrink: 0;
     transform: rotate(-180);
-}
 
-.carousel-button:hover {
-    background-color: var(--bakery-landing-11);
-    fill: var(--bakery-landing-1-background);
-}
+    &:hover {
+        background-color: var(--bakery-landing-11);
+        fill: var(--bakery-landing-1-background);
+    }
 
-.carousel-button.next {
-    transform: rotate(0.5turn);
+    &--next {
+        transform: rotate(0.5turn);
+    }
 }
