@@ -6,16 +6,11 @@
             var(--bakery-landing-11) 100%);
     padding: 24px;
     height: 444px;
-    transition: transform 0.3s;
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     overflow: hidden;
-
-    &:hover {
-        transform: scale(1.05);
-    }
     
     &__image {
         position: absolute;
